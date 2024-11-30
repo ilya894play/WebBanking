@@ -60,7 +60,8 @@ function show() {
 }
 
 function hide() {
-
+    let idInput = "input-" + this.id
+    document.querySelector(`#${idInput}`).type = "text"
 }
 
 let hiddenNumber = document.querySelector("#card-number")
